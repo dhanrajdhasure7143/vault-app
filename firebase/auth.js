@@ -43,7 +43,8 @@ function signOut() {
         // You can redirect the user to the login page or perform additional tasks after sign out
     }).catch(function(error) {
         // An error happened
-        console.error("Sign out error:", error);
+        displayNotification(error.message)           
+
     });
 }
 
@@ -75,7 +76,7 @@ function login() {
             var errorCode = error.code;
             var errorMessage = error.message;
             console.error('Login error:', errorCode, errorMessage);
-            alert(errorMessage);
+            displayNotification('Login failed, plz try again!')           
         });
 }
 
@@ -100,9 +101,7 @@ function signup() {
             // Handle signup errors
             var errorCode = error.code;
             var errorMessage = error.message;
-            displayNotification('Signup error: '. errorMessage)
-            console.error('Signup error:', errorCode, errorMessage);
-            alert(errorMessage);
+            displayNotification(error.message)           
         });
 }
 
@@ -115,6 +114,6 @@ function displayNotification(message) {
     // Hide the notification after a certain time (e.g., 5 seconds)
     setTimeout(function() {
         notificationOverlay.classList.remove("show");
-    }, 2000); // Adjust the time as needed (in milliseconds)
+    }, 3000); // Adjust the time as needed (in milliseconds)
 }
 
