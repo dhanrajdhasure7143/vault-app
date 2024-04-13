@@ -194,7 +194,7 @@ h1 {
 
 .header h2 {
     color: white;
-    margin: 0; /* Remove margin from h1 */
+    margin: 0;
     margin: 10px 0;
 }
 
@@ -210,7 +210,7 @@ h1 {
     position: fixed;
     top: 30px;
     right: 20px;
-    max-width: 300px; /* Adjust width as needed */
+    max-width: 300px;
     height: auto;
     border: 2px solid white;
     border-radius:10px;
@@ -220,11 +220,9 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     z-index: 1000;
-    display: none; /* Initially hidden */
+    display: none; 
 }
 
 .notification-overlay.show {
-    display: block; /* Show when notification is active */
+    display: block; 
 }
-
-/* You can add more styles as needed */
