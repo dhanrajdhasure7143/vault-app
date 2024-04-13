@@ -33,7 +33,7 @@ h1 {
 .form input[type="email"],
 .form input[type="password"],
 .form button {
-    width: calc(100% - 20px);
+    width: calc(100% - 0px);
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -45,6 +45,7 @@ h1 {
     color: #fff;
     border: none;
     border-radius: 4px;
+    width: 100%;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -150,6 +151,10 @@ h1 {
     #login-form {
         margin-top: -200px;
     }
+
+    #signup-form{
+        margin-top: -200px;
+    }
 }
 
 /* Medium devices (tablets) */
@@ -177,7 +182,7 @@ h1 {
 }
 
 .header {
-    background-color: #333; /* Header background color */
+    background-color: black; /* Header background color */
     color: #fff; /* Header text color */
     padding: 10px 0; /* Padding around header content */
     text-align: center; /* Center-align header content */
