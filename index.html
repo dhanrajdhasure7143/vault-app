@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>Ved Locker</h2>
+        <!-- <button class="logout-btn" onclick="signOut()">Logout</button> -->
+    </div>
+    <div class="container">
+        <!-- Login Form -->
+        <div id="login-form" class="form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="toggleForm('signup-form')">Sign Up</a></p>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signup-form" class="form" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="text" id="signup-name" placeholder="Name">
+            <input type="email" id="signup-email" placeholder="Email">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button onclick="signup()">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="toggleForm('login-form')">Login</a></p>
+        </div>
+
+        <!-- File Upload Section -->
+        <div id="file-upload" class="form" style="display: none;">
+            <div class="text-box">
+                <button onclick="signOut()">Logout</button>
+                <input type="file" id="file-input" style="display: block;">
+                <button onclick="uploadFile()">Upload File</button>
+            </div>
+            <!-- <div>
+                <ul id="file-list"></ul>
+            </div> -->
+
+            <div id="file-list-container">
+                <ul id="file-list"></ul>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="notification-overlay" id="notification-overlay"></div>
+
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- Firebase Configuration and Authentication Scripts -->
+    <script src="firebase/firebase-config.js"></script>
+    <script src="firebase/auth.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
