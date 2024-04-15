@@ -19,7 +19,7 @@
             <h2>Login</h2>
             <input type="email" id="login-email" placeholder="Email">
             <input type="password" id="login-password" placeholder="Password">
-            <button onclick="login()">Login</button>
+            <button onclick="login()" style="font-weight: 800;">Login</button>
             <p>Don't have an account? <a href="#" onclick="toggleForm('signup-form')">Sign Up</a></p>
         </div>
 
@@ -29,16 +29,16 @@
             <input type="text" id="signup-name" placeholder="Name">
             <input type="email" id="signup-email" placeholder="Email">
             <input type="password" id="signup-password" placeholder="Password">
-            <button onclick="signup()">Sign Up</button>
+            <button onclick="signup()" style="font-weight: 800;">Sign Up</button>
             <p>Already have an account? <a href="#" onclick="toggleForm('login-form')">Login</a></p>
         </div>
 
         <!-- File Upload Section -->
         <div id="file-upload" class="form" style="display: none;">
             <div class="text-box">
-                <button onclick="signOut()">Logout</button>
+                <button onclick="signOut()" style="font-weight: 800;">Logout</button>
                 <input type="file" id="file-input" style="display: block;">
-                <button onclick="uploadFile()">Upload File</button>
+                <button onclick="uploadFile()" style="font-weight: 800;">Upload File</button>
             </div>
             <!-- <div>
                 <ul id="file-list"></ul>
