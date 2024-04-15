@@ -236,3 +236,19 @@ h1 {
     font-weight: 800;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#named{
+    padding: 20px 10px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.fi-name {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 20px; */
+    height: 40px;
+    border: 2px solid gray;
+}
