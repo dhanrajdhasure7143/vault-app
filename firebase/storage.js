@@ -15,7 +15,7 @@ function addFileMetadata(userId, fileName, downloadURL) {
     });
 }
 
-// Function to retrieve user's files from Firestore/Realtime Database
+// Function to retrieve user's files from Firestore Database
 function getUserFiles(userId) {
     var db = firebase.firestore();
     return db.collection("files").where("userId", "==", userId).get();
