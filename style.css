@@ -179,7 +179,7 @@ h1 {
 }
 
 .header {
-    background-color: black; 
+    background-color:#109fe0; 
     color: #fff;
     padding: 10px 0;
     text-align: center; 
@@ -193,6 +193,7 @@ h1 {
     color: white;
     margin: 0;
     margin: 10px 0;
+    font-weight: 900;
 }
 
 .text-box{
