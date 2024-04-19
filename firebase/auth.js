@@ -1,7 +1,7 @@
 function signOut() {
     firebase.auth().signOut().then(function () {
         console.log("Signed out");
-        displayNotification("Signed Out!!")
+        displayNotification("Logged Out!!")
         document.getElementById('login-form').style.display = 'block';
         document.getElementById('file-upload').style.display = 'none';
     }).catch(function (error) {
@@ -24,6 +24,8 @@ function login() {
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then(function (userCredential) {
             var user = userCredential.user;
+            displayNotification("Login Successful..");
+
             localStorage.setItem('users-mail', user.email)
             console.log('Logged in email Id :', localStorage.getItem('users-mail'));
 
